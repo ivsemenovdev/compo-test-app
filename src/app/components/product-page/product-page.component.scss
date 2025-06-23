@@ -266,4 +266,64 @@
       width: 100%;
     }
   }
+
+  .product-details {
+    background: #fff;
+    border-radius: 1rem;
+    margin: 0 -1rem 0 -1rem;
+    padding: 1.125rem 0.75rem 0 0.75rem;
+    box-shadow: none;
+  
+    .tabs {
+      display: flex;
+      gap: 0.5rem;
+      margin-bottom: 1.125rem;
+      border-radius: 0.75rem;
+      padding: 0.25rem;
+    }
+    .tab-btn {
+      flex: 1;
+      padding: 0.75rem 0;
+      border: none;
+      background: #E6E7E9;
+      border-radius: 0.5rem;
+      font-size: 0.875rem;
+      font-weight: 500;
+      color: #B3B7BC;
+      cursor: pointer;
+      &.active {
+        background: #E6ECF1;
+        color: #075095;
+      }
+    }
+    .tab-content {
+      padding: 0 0 1.5rem 0;
+  
+      tbody {
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+      }
+      tr {
+        display: flex;
+        td {
+          font-size: 0.875rem;
+          font-weight: 400;
+          line-height: 1.25rem;
+          color: #01101E;
+          width: 50%;
+        }
+        .codes {
+          word-break: break-word;
+        }
+        .label {
+          display: flex;
+          align-items: center;
+          justify-content: flex-start;
+          color: #B3B7BC;
+        }
+      } 
+  
+    }
+  }
   
