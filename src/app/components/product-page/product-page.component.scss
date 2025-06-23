@@ -1,0 +1,27 @@
+.product-page-container {
+    display: flex;
+    justify-content: center;
+}
+
+.product-page {
+    width: 100%;
+    max-width: 360px;
+    background-color: var(--white);
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    position: relative;
+    padding-bottom: 64px;
+  }
+
+.product-nav {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    max-width: 360px;
+    height: 64px;
+    display: flex;
+    justify-content: space-around;
+    background-color: var(--white);
+    border-top: 1px solid var(--border-color);
+    padding: 0 16px;
+}
