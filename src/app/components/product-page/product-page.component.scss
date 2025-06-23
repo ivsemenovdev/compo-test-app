@@ -113,9 +113,9 @@
       margin: 0;
     }
     .brand-logo {
-      margin: 1rem 0 .75rem;
+      margin: 1rem 0 0.75rem;
       img {
-        height: 30px;
+        height: 1.875rem;
       }
     }
     .product-codes {
@@ -129,16 +129,141 @@
         padding: 0;
       }
       .product-code-item {
-        margin-bottom: 10px;
+        margin-bottom: 0.625rem;
       }
   
       .product-code, .brand-code {
         color: #01101E;
       }
       .product-code {
-        margin: 10px 0;
+        margin: 0.625rem 0;
       }
     
+    }
+  }
+
+  .product-purchase {
+    padding-top: 1.5rem;
+    .price-section {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin: 1rem 0 0 0;
+      .price {
+        font-size: 1.25rem;
+        font-weight: 700;
+      }
+      .bonus {
+        display: flex;
+        gap: 0.5rem;
+        align-items: center;
+        color: #50B946;
+        font-size: 0.75rem;
+        font-weight: 700;
+      }
+    }
+    .stock-info {
+      background: #fff;
+      border: none;
+      box-shadow: none;
+      margin-bottom: 1rem;
+      margin-top: 1rem;
+  
+      .stock-header {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 0.5rem;
+        margin-bottom: 0.625rem;
+        position: relative;
+      }
+      .city {
+        font-weight: 700;
+        font-size: 0.875rem;
+        color: #01101E;
+        margin-right: 0.375rem;
+      }
+      .info-icon {
+        font-size: 1rem;
+        color: #B3B7BC;
+        margin-right: auto;
+        margin-left: 0.125rem;
+        vertical-align: middle;
+        cursor: default;
+      }
+      .add-to-cart-btn {
+        background: #075095;
+        color: #fff;
+        border: none;
+        border-radius: 8px;
+        padding: 0.25rem 1rem 0.25rem 1rem;
+        font-size: 0.875rem;
+        display: flex;
+        align-items: center;
+        gap: 0.75rem;
+        cursor: pointer;
+        line-height: 1rem;
+      }
+      .quantity-selector {
+        display: flex;
+        align-items: center;
+        border: 1px solid #075095;
+        border-radius: 8px;
+        overflow: hidden;
+  
+        color: #01101E;
+        padding: 0 1rem;
+        button.quantity-btn {
+          background: none;
+          border: none;
+          color: #075095;
+          height: 2.25rem;
+          cursor: pointer;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          padding: 0;
+        }
+        .quantity {
+          padding: 0 0.75rem;
+          text-align: center;
+          font-size: 0.875rem;
+          font-weight: 400;
+          color: #01101E;
+        }
+      }
+      .stock-details {
+        display: flex;
+        flex-direction: column;
+        gap: 0.625rem;
+        margin-top: 0;
+        margin-bottom: 0;
+        p {
+          margin: 0;
+          padding: 0;
+        }
+        .stock-amount-item, .stock-date-item {
+          font-size: 0.875rem;
+          font-weight: 400;
+          line-height: 1.25rem;
+          color: #B3B7BC;
+        }
+        .stock-amount, .stock-date {
+          color: #01101E;
+          margin-bottom: 0.125rem;
+        }
+        .stock-date.in-stock {
+          color: #50B946;
+        }
+        .stock-date.on-request {
+          color: #B3B7BC;
+        }
+      }
+    }
+    .divider {
+      height: 1px;
+      background: var(--border-color);;
+      width: 100%;
     }
   }
   
