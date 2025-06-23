@@ -24,6 +24,23 @@
     background-color: var(--white);
     border-top: 1px solid var(--border-color);
     padding: 0 1rem;
+
+    .nav-item {
+        width: 32px;
+        height: 32px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-decoration: none;
+        color: var(--secondary-text-color);
+        font-size: 0.75rem;
+        font-weight: 700;
+        padding-bottom: 0.25rem;
+        padding-top: 6px;
+        &.active {
+          color: var(--primary-color);
+        }
+      }
 }
 
 .product-header {
