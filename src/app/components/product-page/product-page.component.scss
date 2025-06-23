@@ -105,3 +105,40 @@
       }
     }
   }
+  .product-info {
+    padding-top: 1.5rem;
+    .product-title {
+      font-size: 1.25rem;
+      font-weight: 700;
+      margin: 0;
+    }
+    .brand-logo {
+      margin: 1rem 0 .75rem;
+      img {
+        height: 30px;
+      }
+    }
+    .product-codes {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      color: #B3B7BC;
+      font-size: 0.875rem;
+      p {
+        margin: 0;
+        padding: 0;
+      }
+      .product-code-item {
+        margin-bottom: 10px;
+      }
+  
+      .product-code, .brand-code {
+        color: #01101E;
+      }
+      .product-code {
+        margin: 10px 0;
+      }
+    
+    }
+  }
+  
